@@ -1,6 +1,63 @@
-/* Reset de base pour le commit 1 */
-body {
+/*Variables CSS */
+:root {
+  --couleur-primaire: #2A9D8F;
+  --couleur-secondaire: #E76F51;
+  --couleur-fond: #F8F9FA;
+  --couleur-texte: #212529;
+  --couleur-blanc: #FFFFFF;
+  
+  --police-titre: 'Poppins', sans-serif;
+  --police-texte: 'Roboto', sans-serif;
+  
+  --espacement-sm: 0.5rem;
+  --espacement-md: 1rem;
+  --espacement-lg: 2rem;
+}
+
+/*Reset CSS */
+* {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Styles de base */
+body {
+  font-family: var(--police-texte);
+  font-size: 16px;
+  color: var(--couleur-texte);
+  background-color: var(--couleur-fond);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--police-titre);
+  font-weight: 700;
+  margin-bottom: var(--espacement-md);
+}
+
+a {
+  text-decoration: none;
+  color: var(--couleur-primaire);
+}
+
+/*Navbar */
+.navbar {
+  background-color: var(--couleur-blanc) !important;
+  padding: var(--espacement-md) var(--espacement-lg);
+}
+/* Liens de la navbar */
+.navbar .nav-link {
+  color: var(--couleur-texte) !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: var(--couleur-primaire) !important;
+}
+
+.navbar-brand {
+  color: var(--couleur-texte) !important;
+  font-family: var(--police-titre);
+  font-weight: 700;
 }
