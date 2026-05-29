@@ -61,3 +61,78 @@ a {
   font-family: var(--police-titre);
   font-weight: 700;
 }
+
+/* Hero asymétrique */
+.hero-asym {
+  background: linear-gradient(135deg, var(--couleur-fond) 0%, #e9ecef 100%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--espacement-lg);
+}
+
+.bento-item {
+  background: var(--couleur-blanc);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: var(--police-texte);
+}
+
+.bento-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.bento-large {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: linear-gradient(135deg, var(--couleur-primaire) 0%, #1a8fd4 100%);
+  color: var(--couleur-blanc);
+}
+
+.bento-large h3, .bento-large p {
+  color: var(--couleur-blanc);
+}
+
+.bento-wide {
+  grid-column: span 3;
+  background: var(--couleur-secondaire);
+  color: var(--couleur-blanc);
+}
+
+/* Mobile : 1 seule colonne */
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-large, .bento-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+/* Cartes catégories hover */
+.categories .card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: var(--couleur-blanc);
+}
+
+.categories .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.categories .card-title {
+  color: var(--couleur-primaire);
+  font-family: var(--police-titre);
+}
