@@ -136,3 +136,22 @@ a {
   color: var(--couleur-primaire);
   font-family: var(--police-titre);
 }
+/* Tablette 768px la bento passe 1 colonne */
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-large, .bento-wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+/* Mobile 375px on réduit les tailles de texte */
+@media (max-width: 575px) {
+  .display-3, .display-4 { font-size: 2rem !important; }
+  .display-1 { font-size: 2.5rem !important; }
+  h1, h2 { font-size: 1.8rem; }
+  .category-card { padding: 1.5rem !important; }
+  .container { padding-left: 15px; padding-right: 15px; }
+}
