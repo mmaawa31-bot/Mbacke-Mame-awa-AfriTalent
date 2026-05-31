@@ -13,6 +13,16 @@
   --espacement-md: 1rem;
   --espacement-lg: 2rem;
 }
+[data-theme="dark"] {
+  --couleur-fond: #121212;
+  --couleur-texte: #ffffff;
+  --couleur-primaire: #bb86fc;
+}
+body {
+  background-color: var(--couleur-fond);
+  color: var(--couleur-texte);
+  transition: 0.3s ease;
+}
 
 /*Reset CSS */
 * {
@@ -154,4 +164,16 @@ a {
   h1, h2 { font-size: 1.8rem; }
   .category-card { padding: 1.5rem !important; }
   .container { padding-left: 15px; padding-right: 15px; }
+}
+/* Bouton remonter */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+}
+/* Transition fluide pour la navbar */
+.navbar {
+  transition: box-shadow 0.3s ease-in-out !important;
 }
