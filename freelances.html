@@ -36,18 +36,25 @@
     <section>
       <h1>Nos Freelances</h1>
       <p>Découvrez les développeurs, designers et marketeurs disponibles sur AfriTalent. Tous nos profils sont vérifiés et notés par nos clients.</p>
-      
+      <!--  commit 8 boutons de filtrage dynamique des freelances par catégorie -->
+<div class="filters mb-4 text-center">
+  <button class="btn btn-outline-primary me-2" data-filter="all">Tous</button>
+  <button class="btn btn-outline-primary me-2" data-filter="dev">Développeurs</button>
+  <button class="btn btn-outline-primary me-2" data-filter="design">Designers</button>
+  <button class="btn btn-outline-primary" data-filter="marketing">Marketing</button>
+</div>
+<!-- Cartes freelances avec catégorie pour filtrage JS -->
       <div class="row mt-4">
-        <div class="col-md-4">
+        <div class="col-md-4 freelance-card" data-category="dev">
           <img src="Images/dev1.jpeg" alt="Développeur" class="img-fluid rounded">
           <p class="mt-2">Développement web et mobile</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 freelance-card" data-category="design">
           <img src="Images/designer.jpeg" alt="Designer" class="img-fluid rounded">
           <p class="mt-2">Design UI/UX</p>
         </div>
-        <div class="col-md-4">
-          <img src="Images/marketing.jpeg" alt="Marketing" class="img-fluid rounded">
+        <div class="col-md-4 freelance-card" data-category="marketing">
+          <img src="Images/marketing.jpeg" alt="marketing" class="img-fluid rounded">
           <p class="mt-2">Marketing digital</p>
         </div>
       </div>
@@ -57,6 +64,6 @@
     <p>© 2026 AfriTalent - Tous droits réservés</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
