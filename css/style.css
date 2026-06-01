@@ -177,3 +177,18 @@ a {
 .navbar {
   transition: box-shadow 0.3s ease-in-out !important;
 }
+/* COMMIT 7 - Fade-in et le compteurs */
+.stat-section{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.stat-section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.counter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0d6efd;
+}
