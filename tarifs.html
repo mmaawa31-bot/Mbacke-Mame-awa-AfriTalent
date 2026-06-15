@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AfriTalent -Tarifs</title>
   <!-- Google Fonts Poppins + Roboto -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -26,24 +29,85 @@
           <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><button id="theme-toggle" class="btn btn-outline-light ms-2" type="button">🌙</button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
- <!-- Contenu de la page -->
-<main class="container my-5">
-  <section>
-    <h1>Nos Tarifs</h1>
-    <p>Des offres claires et sans frais cachés. Choisissez l’offre qui correspond à votre projet.</p>   
-    <img src="Images/tarifs.jpeg" alt="Tarifs AfriTalent" class="img-fluid rounded mt-4">   
-    <p class="mt-4">Contactez-nous pour un devis personnalisé.</p>
+  <!-- Contenu de la page -->
+  <main class="container my-5">
+    <section>
+      <h1>Nos Tarifs</h1>
+      <p>Des offres claires et sans frais cachés. Choisissez l’offre qui correspond à votre projet.</p>
+      <img src="Images/tarifs.jpeg" alt="Tarifs AfriTalent" class="img-fluid rounded mt-4">
+      <div class="grille-tarifs mt-5">
+        <!-- Carte 1 -->
+        <div class="tarif-card">
+          <h3>Gratuit</h3>
+          <p class="prix">0€<span>/mois</span></p>
+          <ul class="list-unstyled">
+            <li>✓ 1 projet actif</li>
+            <li>✓ Support email</li>
+            <li>✗ Pas de domaine perso</li>
+          </ul>
+          <button class="btn-tarifs">Choisir</button>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="tarif-card tarif-populaire">
+          <h3>Pro</h3>
+          <p class="prix">29€<span>/mois</span></p>
+          <ul class="list-unstyled">
+            <li>✓ Projets illimités</li>
+            <li>✓ Support prioritaire</li>
+            <li>✓ Domaine personnalisé</li>
+          </ul>
+          <button class="btn-tarifs">Choisir</button>
+        </div>
+
+        <!-- Carte 3  -->
+        <div class="tarif-card">
+          <h3>Entreprise</h3>
+          <p class="prix">99€<span>/mois</span></p>
+          <ul class="list-unstyled">
+            <li>✓ Tout de Pro</li>
+            <li>✓ API dédiée</li>
+            <li>✓ Manager dédié</li>
+          </ul>
+          <button class="btn-tarifs">Contact</button>
+        </div>
+      </div>
+      <p class="mt-4">Contactez-nous pour un devis personnalisé.</p>
+
+    </section>
+  </main>
+  <section class="faq">
+
+    <h2>Questions fréquentes</h2>
+
+    <div class="faq-item">
+      <h3>Puis-je changer d'offre ?</h3>
+      <p>Oui, vous pouvez changer d'abonnement à tout moment.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Y a-t-il des frais cachés ?</h3>
+      <p>Non. Tous les prix sont transparents.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Quels moyens de paiement acceptez-vous ?</h3>
+      <p>Carte bancaire, Mobile Money et autres solutions sécurisées.</p>
+    </div>
+
   </section>
-</main>
-<footer class="bg-dark text-white text-center py-3 mt-5">
-  <p>© 2026 AfriTalent - Tous droits réservés</p>
-</footer>
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>© 2026 AfriTalent - Tous droits réservés</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="JS/main.js"></script>
 </body>
+
 </html>
